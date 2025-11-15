@@ -1,0 +1,103 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background settings */
+body {
+    background-image: url('New\ Project1.jpg'); /* Ensure correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo positioning */
+.logo {
+    position: absolute;
+    top: 20px; /* Adjust vertical position */
+    left: 30px; /* Adjust horizontal position */
+}
+
+.logo img {
+    width: 350px;
+    height: auto;
+}
+
+/* Login box container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Login box */
+.login-box {
+    background:rgba(0, 0, 0, 0.493); /* Transparent black */
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+/* Login title */
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input fields */
+.input-control {
+    text-align: left;
+
+}
+
+.input-control label {
+    display: block;
+    font-size: 14px;
+    
+}
+
+.input-control input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Login button */
+#loginbtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#loginbtn:hover {
+    background-color: #cc5200;
+}
+
+.nav-options a{
+    text-decoration: none;
+    color: white;
+    margin-left: 45px;
+    font-size: 18px;
+}

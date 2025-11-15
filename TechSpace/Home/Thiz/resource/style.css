@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    font-family: "inter", serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.back-clip{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Smartphones */
+@media screen and (max-width: 599px) {
+    .back-clip{
+      height: 100vh; 
+      object-fit: cover;
+    }
+  }
+  
+  /* Tablets (Portrait & Landscape) */
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .back-clip{
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  
+  /* Desktops */
+  @media screen and (min-width: 1025px) {
+    .back-clip{
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 30px 10px 30px;
+}
+
+.logo {
+    display: flex;
+}
+
+#img1 {
+    width: 270px;
+    height: 100px;
+}
+
+#nav-list {
+    text-decoration: none;
+    color: white;
+    margin-right:  50px;
+    font-size: 15pt;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+    margin: 290px 55px 25px 55px;
+}
+
+.body-left {
+    width: 80%;
+    margin-top:160px;
+}
+
+.hello{
+    color: white;
+    font-size: 11pt;
+    background-color: rgba(214, 212, 206, 0.5);
+    padding: 6px 10px;
+    border-radius: 14px;
+}
+
+.desc {
+    width: 55%;
+    margin-top: 15px;
+    color: white;
+    font-size: 45pt;
+}
+
+.para {
+    width: 48%;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.body-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.btn-scroll {
+    background-color: rgb(0, 0, 0);
+    height: 45px;
+    width: 190px;
+    border-radius: 125px;
+    border: none;
+    text-decoration: none;
+    color:  white;
+    font-size: 12pt;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-staff{
+    border-radius: 125px;
+    border: none;
+    padding: 15px 12px 12px 10px;
+    margin-right: 25px;
+    width: 160px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+}
+
+.scroll-div {
+    background-color: white;
+    padding-top: 50px;
+}
+
+.top-part {
+    margin-left: 55px;
+}
+
+.msg1 {
+    border: none;
+    color: red;
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(230, 128, 128, 0.5);
+    font-size: 11pt;
+}
+
+.title1 {
+    margin: 40px 40px 40px 40px;
+    width: 30%;
+    font-size: 40pt;
+}
+.title-red {
+    color: red;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 90px 55px 120px 55px;
+    transition: 0.5s ease-in-out;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    font-size: 12pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(57, 50, 50);
+    width: 380px;
+    
+}
+
+.img1-con:hover img{
+    content: url('./resource/2.0.png');
+    transition: 0.5s ease-in-out;
+}
+
+.img2-con:hover img{
+    content: url('./resource/2.1.png');
+}
+
+.img3-con:hover img {
+   content: url('./resource/2.2.png');
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.title2 {
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.para2 {
+    font-size: larger;
+    color: rgb(78, 78, 78);
+}
+
+.title3 {
+    margin: 50px 90px 80px 40px;
+}
+
+#img-logo {
+    width:90%;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+}
+
+.final-card {
+    border: none;
+    border-radius: 16px;
+    padding: 200px;
+    width: 60%;
+    background-image: url('../Thiz/resource/connect.png');
+}
+
+.card2 {
+    display: flex;
+    justify-content: center;
+}
+
+.card-msg {
+    border: none;
+    border-radius: 120px;
+    background-color: rgba(212, 209, 201, 0.5);
+    padding: 10px;
+    font-size: small;
+    color: white;
+}
+
+.header-card{
+    margin-top: 30px;
+    color: white;
+    font-size: 40pt;
+}
+
+.card-para {
+    margin: 10px 0px 30px 0px;
+    font-size: 14pt;
+    color: white;
+}
+
+.call-btn {
+    padding: 15px 20px 15px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 120px;
+}
+
+.careers-btn {
+    padding: 15px 20px 15px 20px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 20px;
+}
+.careers-btn:hover{
+    background-color: red;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    font-family: "inter", serif;
+    padding: 60px;
+    color: white;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: rgb(34, 34, 34);
+ }
+ 
+ .foot1 a{
+     display: flex;
+     text-decoration: none;
+     color: white;
+     margin: 20px;
+ }
+ 
+ .foot1 a:hover{
+     color: rgb(194, 189, 189);
+ }
+ 
+ .foot1 label{
+     border: none;
+     border-radius: 120px;
+     padding: 6px;
+     background-color: rgb(131, 130, 129);
+     font-size: 10pt;
+ }
+ 
+ .foot1 p{
+     margin-top: 90px;
+ }
+ 
+ .foot2 a{
+     display: flex;
+     text-decoration: none;
+     color: white;
+     margin: 20px;
+     align-items: center;
+ }
+ 
+ .foot2 a:hover{
+     color: rgb(194, 189, 189);
+ }
+ 
+ 
+ .foot2 label{
+     border: none;
+     border-radius: 120px;
+     padding: 6px;
+     background-color: rgb(131, 130, 129);
+     font-size: 10pt;
+ }
+ 
+ .foot2 p{
+     margin-left: 15px;
+ }
+ 
+ .foot3 a{
+     display: flex;
+     text-decoration: none;
+     color: white;
+     margin: 20px;
+     align-items: center;
+ }
+ 
+ .foot3 a:hover{
+     color: rgb(194, 189, 189);
+ }
+ 
+ 
+ .foot3 label{
+     border: none;
+     border-radius: 120px;
+     padding: 6px;
+     background-color: rgb(131, 130, 129);
+     font-size: 10pt;
+ }
+ 
+ .foot3 p{
+     margin-left: 15px;
+ }
+ 
+ .foot4 p{
+     margin: 20px;
+ }
+ 
+ .foot4 label{
+     border: none;
+     border-radius: 120px;
+     padding: 6px;
+     background-color: rgb(131, 130, 129);
+     font-size: 10pt;
+ }
+ 
+ .foot4 img{
+     width: 300px;
+     height: 100px;
+     margin-top: 250px;
+ }
